@@ -27,7 +27,7 @@ public class CalendarUtil {
 	**/
 	public static int NumDaysInMonth(int year, int month) {
 		
-		int baseDays = DaysInMonth[month];
+		int baseDays = DaysInMonth[month+1];
 	
 		if(IsLeapYear(year) && (month == FEBRUARY)) {
 				baseDays = baseDays + 1;
